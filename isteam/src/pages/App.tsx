@@ -1,9 +1,10 @@
+import Header from "../components/header/Header";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <h1>ASEOADOPASKDSP</h1>
+      <Header></Header>
     </>
   );
 }

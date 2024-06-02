@@ -1,9 +1,9 @@
 import axios from "axios";
 export default class NewsService {
-  public static async getNews() {
+  public static async getNews(id: number) {
     axios({
       method: "GET",
-      url: "localhost:3000/",
+      url: `http://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=${id}`,
     });
   }
 }
